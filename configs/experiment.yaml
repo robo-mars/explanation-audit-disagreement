@@ -1,0 +1,29 @@
+project:
+  name: explanation_disagreement_audit
+  data_year: 2018
+  source_state: CA
+  target_states: [TX, NY]
+  tasks: [ACSIncome, ACSPublicCoverage]
+  seeds: [11, 23, 37]
+  n_members: 5
+  train_limit: 30000
+  explanation_limit: 3000
+  sh_train_background: 100
+  sh_pilot_records: 200
+  coverage_primary: 0.20
+  coverage_secondary: [0.05, 0.10, 0.30]
+  bootstrap_reps: 1000
+  xgb:
+    n_estimators: 200
+    max_depth: 3
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    reg_lambda: 1.0
+    random_state_offset: 1000
+  selector_grid:
+    C: [0.01, 0.1, 1.0, 10.0]
+  shap:
+    feature_perturbation: interventional
+    model_output: probability
+    grouping: original_variable

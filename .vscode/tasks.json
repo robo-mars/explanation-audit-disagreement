@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Pilot Day 1",
+      "type": "shell",
+      "command": "python scripts/pilot_day1.py",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Full Experiment",
+      "type": "shell",
+      "command": "python scripts/run_full_experiment.py",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}

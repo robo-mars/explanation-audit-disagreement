@@ -1,0 +1,29 @@
+[project]
+name = "explanation-disagreement-audit"
+version = "0.1.0"
+description = "Experimental setup for explanation disagreement and AI error detection"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy==1.26.4",
+  "pandas==2.2.2",
+  "scikit-learn==1.5.1",
+  "xgboost==2.1.1",
+  "shap==0.46.0",
+  "folktables==0.0.12",
+  "scipy==1.13.1",
+  "matplotlib==3.9.2",
+  "seaborn==0.13.2",
+  "pyyaml==6.0.2",
+  "joblib==1.4.2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.3.2",
+  "ruff==0.6.3",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"

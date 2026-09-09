@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Pilot Day 1",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/pilot_day1.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run Full Experiment",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/run_full_experiment.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}
