@@ -13,6 +13,15 @@ project:
   coverage_primary: 0.20
   coverage_secondary: [0.05, 0.10, 0.30]
   bootstrap_reps: 1000
+  split_seed: 20260909
+  sampling_seed: 20260909
+  bootstrap_seed: 20260910
+  random_policy_seed: 314159
+  robustness_background_limit: 500
+  fairness_min_group_size: 100
+  vote_threshold: 0.5
+  review_rounding: half_up
+  review_tie_breaker: record_key_ascending
   xgb:
     n_estimators: 200
     max_depth: 3
@@ -27,3 +36,5 @@ project:
     feature_perturbation: interventional
     model_output: probability
     grouping: original_variable
+    l1_epsilon: 1.0e-8
+    reconstruction_tolerance: 1.0e-4
