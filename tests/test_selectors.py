@@ -3,7 +3,7 @@ from __future__ import annotations
 import pandas as pd
 
 from src.config import ExperimentConfig, SHAPConfig, SelectorGridConfig, XGBoostConfig
-from src.selectors import score_policies, train_selectors
+from src.review_selectors import score_policies, train_selectors
 
 
 def make_config() -> ExperimentConfig:

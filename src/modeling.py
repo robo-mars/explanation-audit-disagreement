@@ -280,7 +280,7 @@ def score_partition(
     summary["entropy"] = entropy
     summary["variance"] = variance
     summary["vote_disagreement"] = vote_disagreement
-    summary["confidence"] = confidence
+    summary["ensemble_confidence"] = confidence
     summary["low_confidence"] = low_confidence
     summary["explanation_disagreement"] = explanation_scores
     summary["top3_feature_disagreement"] = top3_disagreement

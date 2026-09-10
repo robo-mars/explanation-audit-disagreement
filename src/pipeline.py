@@ -28,7 +28,7 @@ from src.config import ExperimentConfig, load_experiment_config
 from src.data import PreparedTaskData, ProtocolAssets, build_source_household_split, load_protocol_assets, prepare_task_data, sample_records_up_to_limit
 from src.modeling import EnsembleBundle, ScoredPartition, fit_ensemble, score_partition
 from src.preprocessing import fit_preprocessor
-from src.selectors import SelectorBundle, score_policies, train_selectors
+from src.review_selectors import SelectorBundle, score_policies, train_selectors
 from src.utils import stable_hash_int, timed_stage, utc_now_iso, write_json
 
 
